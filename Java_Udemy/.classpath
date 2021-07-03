@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="Array_List_Boxing_Linked"/>
+	<classpathentry kind="src" path="Interface_Abstract_Inner"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
