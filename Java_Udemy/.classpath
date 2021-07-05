@@ -5,7 +5,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="Array_List_Boxing_Linked"/>
-	<classpathentry kind="src" path="Interface_Abstract_Inner"/>
+	<classpathentry excluding="Interace/" kind="src" path="Array_List_Boxing_Linked"/>
+	<classpathentry kind="src" path="Interface_Abstract"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,52 +1,49 @@
 package Interace;
 
-public class DeskPhone implements ITelephone{
+public class DeskPhone implements ITelephone {
 	private int myNumber;
 	private boolean isRinging;
-	
-	
+
 	public DeskPhone(int myNumbe) {
 		this.myNumber = myNumber;
 	}
-	
-	
+
 	@Override
 	public void powerOn() {
 		System.out.println("No action taken, desk phone does not have a power button");
-		
+
 	}
+
 	@Override
 	public void dial(int phoneNumber) {
-		System.out.println("Now ringing "+phoneNumber+" on deskphone");
-		
+		System.out.println("Now ringing " + phoneNumber + " on deskphone");
+
 	}
+
 	@Override
 	public void answer() {
 		if (isRinging) {
 			System.out.println("Answering the desk phone");
-			isRinging=false;
+			isRinging = false;
 		}
 	}
-	
+
 	@Override
 	public boolean callPhone(int phoneNumber) {
 		// TODO Auto-generated method stub
-		if (phoneNumber==myNumber) {
-			isRinging=true;
+		if (phoneNumber == myNumber) {
+			isRinging = true;
 			System.out.println("Ring ring");
-		}
-		else {
-			isRinging=false;
+		} else {
+			isRinging = false;
 		}
 		return false;
 	}
-	
-	
+
 	@Override
 	public boolean isRinging() {
-		
+
 		return isRinging;
 	}
-	
-	
+
 }
